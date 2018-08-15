@@ -8,6 +8,7 @@ const changeOrderStatus = require('./changeOrderStatus');
 const updateDeliveryTime = require('./updateDeliveryTime');
 const updateSeenValue = require('./updateSeenValue');
 const tracker = require('./tracker');
+const addNewOrder = require('./addNewOrder');
 
 router.post('/signup', signUp);
 router.get('/getAllOrders', getAllOrders.getAllOrders);
@@ -16,5 +17,6 @@ router.post('/updateSeenValue', updateSeenValue.updateSeenValue);
 router.post('/changeOrderData', changeOrderStatus.changeOrderStatus);
 router.post('/updateDeliveryTime', updateDeliveryTime.updateDeliveryTime);
 router.post('/tracker', tracker.tracker);
+router.post('/addNewOrder', addNewOrder.addNewOrder);
 
 module.exports = router;
